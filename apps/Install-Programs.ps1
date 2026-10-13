@@ -20,21 +20,31 @@ param()
 $ErrorActionPreference = 'Stop'
 
 $Programs = @(
-    @{ Name = 'PowerShell 7';       Id = 'Microsoft.PowerShell';       Source = 'winget'  }
-    @{ Name = 'Claude Desktop';     Id = 'Anthropic.Claude';           Source = 'winget'  }
-    @{ Name = 'Claude Code';        Id = 'Anthropic.ClaudeCode';       Source = 'winget'  }
-    @{ Name = 'Bitwarden';          Id = '9PJSDV0VPK04';               Source = 'msstore' }
-    @{ Name = 'Visual Studio Code'; Id = 'Microsoft.VisualStudioCode'; Source = 'winget'  }
-    @{ Name = 'Git';                Id = 'Git.Git';                    Source = 'winget'  }
-    @{ Name = 'GitHub CLI';         Id = 'GitHub.cli';                 Source = 'winget'  }
-    @{ Name = 'mise-en-place';      Id = 'jdx.mise';                   Source = 'winget'  }
-    @{ Name = 'Caffeine';           Id = 'ZhornSoftware.Caffeine';     Source = 'winget'  }
-    @{ Name = 'Postman';            Id = 'Postman.Postman';            Source = 'winget'  }
-    @{ Name = 'DBeaver';            Id = 'DBeaver.DBeaver.Community';  Source = 'winget'  }
-    @{ Name = 'PowerToys';          Id = 'Microsoft.PowerToys';        Source = 'winget'  }
-    @{ Name = 'Ngrok';              Id = 'Ngrok.Ngrok';                Source = 'winget'  }
-    @{ Name = 'Windhawk';           Id = 'RamenSoftware.Windhawk';     Source = 'winget'  }
-    @{ Name = 'Everything';         Id = 'voidtools.Everything';       Source = 'winget'  }
+    @{ Name = 'PowerShell 7';             Id = 'Microsoft.PowerShell';              Source = 'winget'  }
+    @{ Name = 'Claude Desktop';           Id = 'Anthropic.Claude';                  Source = 'winget'  }
+    @{ Name = 'Claude Code';              Id = 'Anthropic.ClaudeCode';              Source = 'winget'  }
+    @{ Name = 'Bitwarden';                Id = '9PJSDV0VPK04';                      Source = 'msstore' }
+    @{ Name = 'Visual Studio Code';       Id = 'Microsoft.VisualStudioCode';        Source = 'winget'  }
+    @{ Name = 'Git';                      Id = 'Git.Git';                           Source = 'winget'  }
+    @{ Name = 'GitHub CLI';               Id = 'GitHub.cli';                        Source = 'winget'  }
+    @{ Name = 'mise-en-place';            Id = 'jdx.mise';                          Source = 'winget'  }
+    @{ Name = 'Caffeine';                 Id = 'ZhornSoftware.Caffeine';            Source = 'winget'  }
+    @{ Name = 'Postman';                  Id = 'Postman.Postman';                   Source = 'winget'  }
+    @{ Name = 'DBeaver';                  Id = 'DBeaver.DBeaver.Community';         Source = 'winget'  }
+    @{ Name = 'PowerToys';                Id = 'Microsoft.PowerToys';               Source = 'winget'  }
+    @{ Name = 'Ngrok';                    Id = 'Ngrok.Ngrok';                       Source = 'winget'  }
+    @{ Name = 'Windhawk';                 Id = 'RamenSoftware.Windhawk';            Source = 'winget'  }
+    @{ Name = 'Everything';               Id = 'voidtools.Everything';              Source = 'winget'  }
+    @{ Name = 'Microsoft PC Manager';     Id = '9PM860492SZD';                      Source = 'msstore' }
+    @{ Name = 'WinRAR';                   Id = 'RARLab.WinRAR';                     Source = 'winget'  }
+    @{ Name = 'Redis Insight';            Id = 'RedisInsight.RedisInsight';         Source = 'winget'  }
+    @{ Name = 'Visual Studio Community';  Id = 'Microsoft.VisualStudio.Community';  Source = 'winget'  }
+    @{ Name = 'Android Studio';           Id = 'Google.AndroidStudio';              Source = 'winget'  }
+    @{ Name = 'Docker Desktop';           Id = 'Docker.DockerDesktop';              Source = 'winget'  }
+    @{ Name = 'Calibre';                  Id = 'calibre.calibre';                   Source = 'winget'  }
+    @{ Name = 'Obsidian';                 Id = 'Obsidian.Obsidian';                 Source = 'winget'  }
+    @{ Name = 'FFmpeg';                   Id = 'Gyan.FFmpeg';                       Source = 'winget'  }
+    @{ Name = 'yt-dlp';                   Id = 'yt-dlp.yt-dlp';                     Source = 'winget'  }
 )
 
 if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
