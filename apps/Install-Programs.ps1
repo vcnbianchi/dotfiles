@@ -20,41 +20,39 @@ param()
 $ErrorActionPreference = 'Stop'
 
 $Programs = @(    
-    @{ Name = 'Claude Desktop';                         Id = 'Anthropic.Claude';                          Source = 'winget'  }
-    @{ Name = 'Gemini';                                 Id = 'Google.GeminiDesktop';                      Source = 'winget'  }
-    @{ Name = 'Google Antigravity';                     Id = 'Google.Antigravity';                        Source = 'winget'  }
+    # MISC
     @{ Name = 'Bitwarden';                              Id = '9PJSDV0VPK04';                              Source = 'msstore' }
-    @{ Name = 'PowerShell 7';                           Id = 'Microsoft.PowerShell';                      Source = 'winget'  }
-    @{ Name = 'PowerToys';                              Id = 'Microsoft.PowerToys';                       Source = 'winget'  }
-    @{ Name = 'Ngrok';                                  Id = 'Ngrok.Ngrok';                               Source = 'winget'  }
-    @{ Name = 'Visual Studio Code';                     Id = 'Microsoft.VisualStudioCode';                Source = 'winget'  }
-    @{ Name = 'Visual Studio Community';                Id = 'Microsoft.VisualStudio.Community';          Source = 'winget'  }
-    @{ Name = 'Android Studio';                         Id = 'Google.AndroidStudio';                      Source = 'winget'  }
-    @{ Name = 'Git';                                    Id = 'Git.Git';                                   Source = 'winget'  }
-    @{ Name = 'GitHub CLI';                             Id = 'GitHub.cli';                                Source = 'winget'  }
-    @{ Name = 'GitHub Desktop';                         Id = 'GitHub.GitHubDesktop';                      Source = 'winget'  }
-    @{ Name = 'mise-en-place';                          Id = 'jdx.mise';                                  Source = 'winget'  }
-    @{ Name = 'Postman';                                Id = 'Postman.Postman';                           Source = 'winget'  }
-    @{ Name = 'DBeaver';                                Id = 'DBeaver.DBeaver.Community';                 Source = 'winget'  }
-    @{ Name = 'Redis Insight';                          Id = 'RedisInsight.RedisInsight';                 Source = 'winget'  }
-    @{ Name = 'Docker Desktop';                         Id = 'Docker.DockerDesktop';                      Source = 'winget'  }
-    @{ Name = 'Caffeine';                               Id = 'ZhornSoftware.Caffeine';                    Source = 'winget'  }
-    @{ Name = 'Everything';                             Id = 'voidtools.Everything';                      Source = 'winget'  }
-    @{ Name = 'Windhawk';                               Id = 'RamenSoftware.Windhawk';                    Source = 'winget'  }
-    @{ Name = 'Microsoft PC Manager';                   Id = '9PM860492SZD';                              Source = 'msstore' }
     @{ Name = 'Calibre';                                Id = 'calibre.calibre';                           Source = 'winget'  }
     @{ Name = 'Obsidian';                               Id = 'Obsidian.Obsidian';                         Source = 'winget'  }
     @{ Name = 'FFmpeg';                                 Id = 'Gyan.FFmpeg';                               Source = 'winget'  }
     @{ Name = 'yt-dlp';                                 Id = 'yt-dlp.yt-dlp';                             Source = 'winget'  }
-    @{ Name = 'Intel® Driver & Support Assistant';      Id = 'Intel.IntelDriverAndSupportAssistant';      Source = 'winget'  }
-    @{ Name = 'AWS Command Line Interface';             Id = 'Amazon.AWSCLI';                             Source = 'winget'  }
-    @{ Name = 'Mp3tag';                                 Id = 'FlorianHeidenreich.Mp3tag';                 Source = 'winget'  }
-    @{ Name = 'Logitech Options+';                      Id = 'Logitech.OptionsPlus';                      Source = 'winget'  }
-    @{ Name = 'Samsung Account';                        Id = '9P98T77876KZ';                              Source = 'msstore' }
-    @{ Name = 'Samsung Notes';                          Id = '9NBLGGH43VHV';                              Source = 'msstore' }
-    @{ Name = 'Samsung Second Screen';                  Id = '9PLTXW5DX5KB';                              Source = 'msstore' }
-    @{ Name = 'WhatsApp';                               Id = '';                                          Source = '' }
-    
+    #@{ Name = 'Logitech Options+';                      Id = 'Logitech.OptionsPlus';                      Source = 'winget'  }
+    #@{ Name = 'Intel® Driver & Support Assistant';      Id = 'Intel.IntelDriverAndSupportAssistant';      Source = 'winget'  }
+    # WINDOWS
+    @{ Name = 'PowerShell 7';                           Id = 'Microsoft.PowerShell';                      Source = 'winget'  }
+    @{ Name = 'Windhawk';                               Id = 'RamenSoftware.Windhawk';                    Source = 'winget'  }
+    @{ Name = 'Caffeine';                               Id = 'ZhornSoftware.Caffeine';                    Source = 'winget'  }
+    @{ Name = 'Everything';                             Id = 'voidtools.Everything';                      Source = 'winget'  }
+    @{ Name = 'PowerToys';                              Id = 'Microsoft.PowerToys';                       Source = 'winget'  }
+    # DEVELOPMENT
+    @{ Name = 'Android Studio';                         Id = 'Google.AndroidStudio';                      Source = 'winget'  }
+    @{ Name = 'Visual Studio Code';                     Id = 'Microsoft.VisualStudioCode';                Source = 'winget'  }
+    @{ Name = 'mise-en-place';                          Id = 'jdx.mise';                                  Source = 'winget'  }
+    @{ Name = 'Antigravity CLI';                        Id = 'Google.AntigravityCLI';                     Source = 'winget'  }
+    #@{ Name = 'Google Antigravity';                     Id = 'Google.Antigravity';                        Source = 'winget'  }
+    @{ Name = 'Claude Code';                            Id = 'Anthropic.ClaudeCode';                      Source = 'winget'  }
+    #@{ Name = 'Claude';                                 Id = 'Anthropic.Claude';                          Source = 'winget'  }
+    @{ Name = 'Postman';                                Id = 'Postman.Postman';                           Source = 'winget'  }
+    @{ Name = 'DBeaver';                                Id = 'DBeaver.DBeaver.Community';                 Source = 'winget'  }
+    @{ Name = 'Redis Insight';                          Id = 'RedisInsight.RedisInsight';                 Source = 'winget'  }
+    @{ Name = 'Docker Desktop';                         Id = 'Docker.DockerDesktop';                      Source = 'winget'  }
+    @{ Name = 'Git';                                    Id = 'Git.Git';                                   Source = 'winget'  }
+    @{ Name = 'GitHub CLI';                             Id = 'GitHub.cli';                                Source = 'winget'  }
+    @{ Name = 'GitHub Desktop';                         Id = 'GitHub.GitHubDesktop';                      Source = 'winget'  }
+    # SAMSUNG
+    #@{ Name = 'Samsung Account';                        Id = '9P98T77876KZ';                              Source = 'msstore' }
+    #@{ Name = 'Samsung Notes';                          Id = '9NBLGGH43VHV';                              Source = 'msstore' }
+    #@{ Name = 'Samsung Second Screen';                  Id = '9PLTXW5DX5KB';                              Source = 'msstore' }
 )
 
 if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
